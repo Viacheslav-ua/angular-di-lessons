@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { AnimalService } from '../services/animal.service'
+import { ZOO } from '../zoo'
 
 
 
@@ -11,7 +12,8 @@ import { AnimalService } from '../services/animal.service'
   ],
   providers: [
     {
-      provide: AnimalService,
+      // provide: AnimalService,
+      provide: ZOO,
       useValue: {
         emoji: '🐓'
       }

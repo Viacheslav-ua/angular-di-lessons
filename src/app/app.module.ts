@@ -7,12 +7,14 @@ import { RoosterModule } from './rooster/rooster.module';
 import { AnimalService } from './services/animal.service';
 import { ChildComponent } from './components/child/child.component';
 import { GrandChildComponent } from './components/grand-child/grand-child.component';
+import { MonkeyDirective } from './monkey.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChildComponent,
-    GrandChildComponent
+    GrandChildComponent,
+    MonkeyDirective,
   ],
   imports: [
     BrowserModule,
